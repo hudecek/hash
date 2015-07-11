@@ -6,9 +6,9 @@
 class crc32
 {
 private:
-    int crc32_hash;
+    unsigned int crc32_hash;
 public:
-    crc32();
+    crc32(): crc32_hash(0xFFFFFFFF) {}
     void crc32_update(char c);
     void crc32_print(bool hex);
 };

@@ -8,7 +8,7 @@ class xor_hash
 private:
     unsigned char hash;
 public:
-    xor_hash();
+    xor_hash(): hash(0) {}
     void xor_update(char c);
     void print_hash(bool hex);
 };

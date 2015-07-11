@@ -1,9 +1,5 @@
 #include "md5.h"
 
-md5::md5()
-{
-    md5_hash = 0;
-}
 
 void md5::md5_update(char c) {
     (void) c;

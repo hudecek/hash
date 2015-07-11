@@ -1,10 +1,5 @@
 #include "crc16.h"
 
-crc16::crc16()
-{
-    crc16_hash = 0xFFFF;
-}
-
 void crc16::crc16_update(char c) {
     unsigned char x = crc16_hash >> 8 ^ c;
     x ^= x>>4;

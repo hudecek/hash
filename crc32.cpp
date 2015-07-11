@@ -1,10 +1,5 @@
 #include "crc32.h"
 
-crc32::crc32()
-{
-    crc32_hash = 0;
-}
-
 void crc32::crc32_update(char c) {
     (void) c;
 }

@@ -1,9 +1,5 @@
 #include "xor_hash.h"
 
-xor_hash::xor_hash()
-{
-    hash = 0;
-}
 
 void xor_hash::xor_update(char c) {
     hash ^= c;
